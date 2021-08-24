@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>RAMAY - Banda Ramay</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+  <link href="https://fonts.googleapis.com/css?family=Audiowide|Barrio|Chewy|Days+One|Mako|Pattaya|Rum+Raisin|Skranji"
+    rel="stylesheet">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+
+  <!-- Milligram CSS minified -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+
+  <!-- You should properly set the path from the main file. -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/ragV.css">
+
+  <!-- JS -->
+  <script src="./assets/js/video-menager.js" async></script>
+</head>
+
+<body>
+
+  <header class="ramay-big">
+    RAMAY
+  </header>
+
+  <section class="video-animation-container">
+    <div class="portrait-container" id="portrait">
+      <img class="img-left" src="./assets/img/left.jpg" alt="Ramay - guitarra e vocalista" id="movimentChecker">
+      <div class="play-box">
+        <p> Music video</p>
+        <button class="play-icon" id="playVideo"></button>
+        <p>Play now!</p>
+      </div>
+      <img class="img-right" src="./assets/img/right.jpg" alt="Lucas Godoy Ramay - guitarra e vocalista">
+    </div>
+
+    <div class="video-box" id="ragV">
+
+      <div style="position: relative;">
+        <!-- video sem controls -->
+        <video src="./assets/video/ramay.mp4" class="video-player" id="ragVid"></video>
+
+        <div class="ragV-time-box">
+          <progress value="0" min="0" max="100" id="ragVProgressBar" class="progress-bar"></progress>
+          <input type="range" min="0" max="100" id="ragVTimeline" class="slider">
+        </div>
+      </div>
+
+      <div class="ragV-controlls" id="ragVControls">
+        <div class="ragV-flip" data-flip>
+          <button class="ragV-controlls-btn front" id="ragVBtnPlay">
+            <img src="assets/img/icons/play-button.svg" alt="">
+          </button>
+
+          <button class="ragV-controlls-btn back" id="ragVBtnPause">
+            <img src="assets/img/icons/round-pause-button.svg" alt="">
+          </button>
+        </div>
+
+        <button class="ragV-controlls-btn" id="ragVBtnRefresh">
+          <img src="assets/img/icons/refreshing.svg" alt="">
+        </button>
+
+        <div class="ragV-flip" data-flip id="ragVBtnMute" data-mute="">
+          <button class="ragV-controlls-btn front">
+            <img src="assets/img/icons/speaker.svg" alt="">
+          </button>
+          <button class="ragV-controlls-btn back">
+            <img src="assets/img/icons/mute.svg" alt="">
+          </button>
+        </div>
+
+        <div class="ragV-volume-box">
+          <span class="ragVVolumeGraph"></span>
+          <span id="ragVVolumePointer" class="ragV-volume-pointer">30</span>
+          <input type="range" min="0" max="100" id="ragVVolumeBar" class="ragV-volume">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REDES SOCIAIS -->
+  <section class="container streamers-container">
+    <h3 class="streamers-title">Leve a Ramay para onde você for!</h3>
+    <a href="" class="streamers-link">
+      <img src="./assets/img/icons/soundcloud-logo.svg" alt="">
+    </a>
+    <a href="" class="streamers-link">
+      <img src="./assets/img/icons/spotify.svg" alt="">
+    </a>
+    <a href="https://www.facebook.com/Ramayoficial/" target="_blank" class="streamers-link">
+      <img src="./assets/img/icons/facebook-circular-logo.svg" alt="">
+    </a>
+    <a href="" class="streamers-link">
+      <img src="./assets/img/icons/youtube-logo.svg" alt="">
+    </a>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about">
+    <div class="about-container">
+      <div class="about-portrait">
+        <img src="./assets/img/portrait.jpg" alt="">
+      </div>
+      <div class="about-text">
+        <h2>Conheça a Ramay</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact">
+    <h3 class="contact-title">Onde encontrar a Ramay?</h3>
+
+    <div class="contact-container">
+      <a href="" class="contact-link">
+        <img src="./assets/img/icons/icon-mail.svg" alt="" class="contact-img">
+        <span>email@email.com.br</span>
+      </a>
+      <a href="" class="contact-link">
+        <img src="./assets/img/icons/icon-tel.svg" alt="" class="contact-img">
+        <span>(00) 0000-0000</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- AGENDA -->
+  <section class="schedule">
+    <video src="assets/video/ramay-black-and-white.mp4" muted autoplay loop="true" class="schedule-video"></video>
+
+    <div class="schedule-dates-container">
+      <header>
+        <h3 class="schedule-title">Próximos shows</h3>
+      </header>
+      <article class="schedule-event-box">
+        <span class="schedule-date">08/JUL</span>
+        <span class="schedule-dots"></span>
+        <span class="schedule-city">Empório São Francisco <br> Curitiba - PR </span>
+      </article>
+      <article class="schedule-event-box">
+        <span class="schedule-date">30/JUL</span>
+        <span class="schedule-dots"></span>
+        <span class="schedule-city">Casa das primas <br> Florianopolis - SC </span>
+      </article>
+      <article class="schedule-event-box">
+        <span class="schedule-date">10/AGO</span>
+        <span class="schedule-dots"></span>
+        <span class="schedule-city">skate bar <br> Curitiba - Pr</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- SOCIAL MEDIAS -->
+  <section class="social-container">
+    <div class="social-wrapper">
+      <div class="facebook-wrapper">
+
+        <div class="fb-page" data-href="https://www.facebook.com/Ramayoficial/" data-tabs="timeline" data-width="500"
+          data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
+          data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/Ramayoficial/" class="fb-xfbml-parse-ignore"><a
+              href="https://www.facebook.com/Ramayoficial/">RAMAY</a></blockquote>
+        </div>
+
+      </div>
+    </div>
+    <div class="social-wrapper">
+      <div class="instragram-wrapper">
+        https://www.instagram.com/bandaramay/
+      </div>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    Orgulhosamente produzido por:
+    <a href="https://www.linkedin.com/in/evertonthepaula/" title="orgulhosamente produzido por @evertonthepaula"
+      target="_blank">
+      evertonthepaula
+    </a>
+  </footer>
+  
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v11.0&appId=1485816628174035&autoLogAppEvents=1"
+    nonce="SDp3wOs4"></script>
+</body>
+
+</html>
