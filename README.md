@@ -13,3 +13,7 @@ Este projeto **não** tem como objetivo produzir um código perfeito, tanto que 
 
 - Treinar a minha criação e implementação de layouts, combinação de cores e formas;
 - Treinar a implementação de elementos de vídeo.
+
+**Acessar o projeto funcionando**
+
+[Github Page Banda Ramay](https://evertonthepaula.github.io/ramay.github.io/)
